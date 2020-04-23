@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Enquiries</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/enquiries.js" ></script>
+	</head>
+	
+	
+	
+	<body body onLoad="document.enquiries.userid.focus();">
+	<div class="nav-container">
+        <div class="container">
+            <header>
+                 
+                <img src="images/c(6).jpg" alt="MT logo" class="Logo">
+                <div class="nav-bar">
+                    
+                        
+                    
+                    <nav>
+                        <ul class="navigation-bar" id="nav">
+                            <li><a href="home.html" >Home  </a></li>
+                            <li><a href="products.html">Products </a></li>
+                            <li><a href="services.html">Services  </a></li>                          
+                           <li><a href="enquiries.html">Enquiries </a></li>
+
+                        
+                        </ul>
+                    
+                    </nav>
+                </div>
+				<ul> 
+				<li>S</li>
+				</ul>
+        </div>
+    </div>
+			</header>
+
+                         
+						
+                    </div>
+		<div class="container">
+			
+			<form class="login-formm" onSubmit="return validateForm()" name="enquiries"   >
+			<h1 class="login-header">Enquiries</h1>
+				<div class="container">
+					
+					<label for="userid"></label>
+					<input type="text"  class="input-boxx" placeholder="Name" name="userid" size="12">
+					<div class="status" id="status"></div>
+
+					<label for="phone"></label>
+					<input type="number" class="input-boxx" placeholder="Phone number" name="phone"  size="12">
+
+					<label for="email"></label>
+					<input type="text" class="input-boxx" class="form-control" placeholder="Email" name="email">
+					<div class="help-block with-errors"></div>
+
+					<label for="enquiries"></label>
+					<textarea name="enquiries"  class="input-boxx" placeholder="type here" class="txt-area" ></textarea>
+
+					<div class="clearfix">
+						<button type="submit" class="signupbtn" onSubmit= "return validateForm()" onclick="submitForm()">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
